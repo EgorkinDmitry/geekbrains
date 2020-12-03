@@ -36,7 +36,7 @@ public class HomeworkLesson2 {
 
         }
 
-        public static void changeZeroToOne(int arr1[]){
+        public static void changeZeroToOne(int []arr1){
             int i;
             for (i = 0; i < arr1.length; i++ ){
                 if (arr1[i] == 0) {
@@ -47,7 +47,7 @@ public class HomeworkLesson2 {
             System.out.println(Arrays.toString(arr1));
         }
 
-        public static void fillTheArray(int arr1[]){
+        public static void fillTheArray(int []arr1){
             int i;
             int k = 0;
             for (i = 0; i < arr1.length; i++){
@@ -57,7 +57,7 @@ public class HomeworkLesson2 {
             System.out.println(Arrays.toString(arr1));
         }
 
-        public static void multiplyArrayValues(int arr1[]) {
+        public static void multiplyArrayValues(int []arr1) {
             int i;
             for (i = 0; i < arr1.length; i++) {
                 if (arr1[i] < 6) {
@@ -68,7 +68,7 @@ public class HomeworkLesson2 {
             System.out.println();
         }
 
-        public static void fillTheDiagonalsWithOnes(int arr1[][]){
+        public static void fillTheDiagonalsWithOnes(int [][]arr1){
             int i, k;
             for (k = 0; k < arr1.length; k++) {
                 for (i = 0; i < arr1.length; i++) {
@@ -81,7 +81,7 @@ public class HomeworkLesson2 {
             System.out.println();
         }
 
-        public static void findMinMaxValue(int arr1[]){
+        public static void findMinMaxValue(int []arr1){
             int i, maxValue = arr1[0], minValue = arr1[0];
             for (i = 1; i < arr1.length; i++){
                 if (maxValue < arr1[i]) {
@@ -96,7 +96,7 @@ public class HomeworkLesson2 {
             System.out.println();
         }
 
-        public static boolean checkBalance (int arr1 []){
+        public static boolean checkBalance (int []arr1){
 
          int checkLeft = 0, checkRight = 0;
          int i, k;
