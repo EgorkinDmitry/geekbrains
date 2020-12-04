@@ -34,6 +34,10 @@ public class HomeworkLesson2 {
             int [] arr6 = {1, 2, 2, 4, 1};
             System.out.println(checkBalance(arr6));
 
+            // Задание №7
+            int [] arr7 = {3, 4, 5, 6};
+            moveTheArrayElements (arr7, 2);
+
         }
 
         public static void changeZeroToOne(int []arr1){
@@ -112,9 +116,31 @@ public class HomeworkLesson2 {
              }
              checkRight = 0;
          }
-         return (checkResult);
-        }
 
+         return (checkResult);
+
+        }
+        public static void moveTheArrayElements (int []arr1, int n){
+            int k, i, x;
+            if (n > 0) {
+                for (k = 0; k < n; k++) {
+                    x = arr1[arr1.length - 1];
+                    for (i = arr1.length - 1; i > 0; i--) {
+                        arr1[i] = arr1[i - 1];
+                    }
+                    arr1[0] = x;
+                }
+            } else {
+                for (k = 0; k > n; k--) {
+                    x = arr1[0];
+                    for (i = 0; i < arr1.length - 1; i++) {
+                        arr1[i] = arr1[i + 1];
+                    }
+                    arr1[arr1.length - 1] = x;
+                }
+            }
+            System.out.println(Arrays.toString(arr1));
+        }
     }
 
 
