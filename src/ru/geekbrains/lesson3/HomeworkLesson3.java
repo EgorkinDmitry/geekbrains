@@ -12,7 +12,7 @@ public class HomeworkLesson3 {
         int randomNumber;
 
         do {
-            randomNumber = random.nextInt(9);
+            randomNumber = random.nextInt(10);
             guessTheNumber(3, randomNumber, scanner);
             System.out.println("Хотите сыграть ещё раз? (1 - Да, 0 - Нет): ");
             oneMore = scanner.nextInt();
