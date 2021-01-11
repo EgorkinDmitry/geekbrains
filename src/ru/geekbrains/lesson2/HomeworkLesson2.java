@@ -116,10 +116,10 @@ public class HomeworkLesson2 {
              }
              checkRight = 0;
          }
-
          return (checkResult);
 
         }
+
         public static void moveTheArrayElements (int []arr1, int n){
             int k, i, x;
             if (n > 0) {
