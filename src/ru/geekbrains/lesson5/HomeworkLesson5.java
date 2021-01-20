@@ -1,7 +1,5 @@
 package ru.geekbrains.lesson5;
 
-import java.sql.SQLOutput;
-
 public class HomeworkLesson5 {
 
     public static void main(String[] args){
